@@ -1,0 +1,18 @@
+[build]
+  # Root folder of your frontend
+  base = "eaglesoakltd-frontend"
+
+  # Build command
+  command = "npm run build"
+
+  # Output folder after Vite build
+  publish = "eaglesoakltd-frontend/dist"
+
+[build.environment]
+  # Add your environment variables here (Netlify UI overrides this if set)
+  VITE_API_BASE_URL = "https://your-api-base-url.com"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
