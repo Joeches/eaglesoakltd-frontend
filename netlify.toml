@@ -1,23 +1,11 @@
-# ==============================
-# Netlify Build Configuration
-# ==============================
-
 [build]
-  # ✅ Root of your project — since this is already the frontend root
-  base = "."
-
-  # ✅ Build command for Vite
   command = "npm run build"
-
-  # ✅ Folder that contains your built production files
   publish = "dist"
 
 [build.environment]
-  # ✅ You can override this in Netlify dashboard if needed
-  NODE_VERSION = "18"
-  VITE_API_BASE_URL = "https://api.eaglesoakltd.onrender.com"  # <-- replace with your actual API URL
+  NODE_VERSION = "20"
+  VITE_API_BASE_URL = "https://api.eaglesoak.comhttps://eaglesoakltd-backend.onrender.com" # change to your actual backend URL
 
-# ✅ Redirect all routes to index.html (for React Router)
 [[redirects]]
   from = "/*"
   to = "/index.html"
